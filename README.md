@@ -1,6 +1,6 @@
 # gatsby-image-build-error
 
-I've encountered a weird error where gatsby is not building images in production; based on the state of cached folders.
+I've encountered a weird error where gatsby is not building images in production. This behaviour is based on the local state of `.cache` & `public` folders - if one of them is missing, then the resulting build contains no images.
 
 ## Error
 
@@ -17,6 +17,7 @@ gatsby serve # go to localhost:9000 - image is not loaded
 Folder `public/static/` contains one empty directory (but it should contain optimized image).
 
 Resulting site:
+
 ![Error](./images/error.png)
 
 ## Correct behaviour
@@ -33,7 +34,8 @@ gatsby serve # go to localhost:9000 - image is loaded
 The output of the `gatsby build` command contains `success Generating image thumbnails` line, while the error example does not. Folder `public/static/` contains optimized image.
 
 Resulting site:
-![Error](./images/correct.png)
+
+![Correct](./images/correct.png)
 
 ## Env
 
