@@ -39,8 +39,10 @@ Resulting site:
 
 ## Env
 
+Gatsby 2.24.85
+
 MacOSX Catalina (10.15.7)
 
-Node v15.0.1
+Node v15.0.1 (same on v10.23.0)
 
 Gatsby dependencies as seen in `package.json`
