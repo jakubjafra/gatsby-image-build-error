@@ -40,5 +40,7 @@ Resulting site:
 ## Env
 
 MacOSX Catalina (10.15.7)
+
 Node v15.0.1
+
 Gatsby dependencies as seen in `package.json`
